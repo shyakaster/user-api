@@ -1,0 +1,20 @@
+require:
+   - rubocop-rails
+   - rubocop-rspec
+   - rubocop-performance
+
+AllCops:
+    Exclude:
+        - db/**/*
+
+Metrics/BlockLength:
+    Exclude:
+      - config/**/*
+      - spec/**/*
+
+Lint/AmbiguousBlockAssociation:
+    Exclude:
+        - spec/**/*
+
+Style/Documentation:
+    Enabled: false
