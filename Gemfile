@@ -29,6 +29,8 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   # Environment variables
   gem 'dotenv-rails'
+  #Annotate 
+  gem 'annotate'
   # Debugging, call byebug at anytime and you will see a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   # testing
@@ -45,6 +47,10 @@ end
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
+  #Debugging
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'pry-rescue'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
